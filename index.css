@@ -1,82 +1,86 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    background-color: rgb(228, 241, 253);
 }
-
 body {
-    margin: 0 auto;
-    width: 800px;
-    height: 600px;
-    background-color: white;
+    font-family: Helvetica Neue, Arial;
+    font-size: 18px;
+}
+
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container{
+    width: 1140px;
+    margin: 20px auto 0 auto;
+}
+h1, h2 {
+    color: rgb(9, 94, 9);
+}
+
+h1 {    
+    font-size: 40px;
+    margin-bottom: 15px; 
+}
+
+h2 {
+    font-size: 25px;
+    margin: 10px 0 10px 0;
 
 }
 
-
-#freedom {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-radius: 12px;
-    background: blueviolet;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-    
-
-    
+.main-text {
+    text-align: justify;
+    margin-bottom: 10px;
 }
 
-#freedom h1 {
-    
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    height: 100px;
-    text-align: center;
-    vertical-align: middle;
-    padding: 20px 0 0 0;
+a {
+    text-decoration: None;
 }
 
-.section-title {
-    color: darkslategray;
+.blog-post{
+    position: relative;
+    width: 75%;
+    float: left;
+    padding: 0 10px 0 0;
+}
+.blog-post img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.other-posts{
+
+    width: 25%;
+    float: left;
+}
+.other-posts p{
+    margin-bottom: 20px;
+}
+.logo{
+    padding-top: 20px;
+    border-top: 1px solid rgb(194, 191, 191);
+}
+.logo img{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+.logo p{
+    font-size: 20px;
+    float: left;
+    margin-top: 40px;
+    margin-left: 25px;
 }
 
-.main-header {
-    padding: 10 px;
-    background-color: chartreuse;
-    width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-    margin: 2rem auto;
-}
-
-.main-header ul {
-    
-    display: flex;
-    
-    padding: 1rem;
-    border-radius: 12px;
-    color: darkslategray;
-    font-weight: bold;
-    
-
-}
-
-.main-header div {
-    padding: 1rem 0 0 1rem;
-}
-
-.main-header li {
-    padding: 0 2rem;
-    display: table-column;
-    justify-content: space-between;
-    
-}
-
-.container {
-    display: flex;
-}
-.container.space-around {
-    justify-content: space-around;
-}
-
-.article ul{
-    display: flex;
-}
-
-.article li{
-    display: table-column;
+.date{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: rgb(122, 123, 124);
 }
